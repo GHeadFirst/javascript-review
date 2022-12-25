@@ -1,4 +1,8 @@
-body {
+/* body {
+    background-color: aqua;
+} */
+
+.body {
     background-color: aqua;
 }
 
@@ -8,7 +12,7 @@ body {
     justify-content: center;
 }
 
-button {
+.btn {
     display: inline-block;
     
 }

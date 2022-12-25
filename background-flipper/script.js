@@ -1,17 +1,22 @@
 console.log("hello there!");
-let color = document.body.style.backgroundColor
-let colorText = document.querySelector("text-color").textContent
+let color = document.querySelector(".body")
+let colorText = document.querySelector(".text-color")
 
 function generateBackgroundColor() {
     let colorGenerated = '#' + Math.floor(Math.random()*16777215).toString(16)
-    colorText = color
+    color.style.backgroundColor = colorGenerated
+    colorText.textContent = `Your color is: ${colorGenerated}`
+    
+    
+    console.log(colorText.textContent);
+    console.log(color);
+    // console.log(colorGenerated);
 }
 
-button.addEventListener('click', () => {
+  document.querySelector(".btn").addEventListener('click', () => {
    generateBackgroundColor()
   });
 
-color = colorGenerated
 
 
 
